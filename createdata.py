@@ -20,8 +20,14 @@ print(header)
 cnt:int
 cnt = 0
 for row in f:
-    p= {"key":row[0],"Name":row[0],"Institution": row[2],"Title":row[3],"Age":row[1],"Nationality":row[4],
-    "created_time":datetime.datetime.now().strftime("%Y%m%d_%H%M%S"),"modified_time":datetime.datetime.now().strftime("%Y%m%d_%H%M%S")}
+    p= {"key":row[0]
+    ,"Name":row[0]
+    ,"Institution": row[2]
+    ,"Title":row[3]
+    ,"Age":row[1]
+    ,"Nationality":row[4]
+    ,"created_time":datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    ,"modified_time":datetime.datetime.now().strftime("%Y%m%d_%H%M%S")}
     dp = vars(p);
     ppl.insert(dp);
 csv_file.close()
